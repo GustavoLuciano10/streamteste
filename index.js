@@ -18,11 +18,11 @@ let streamYT = (YTrtmp) => {
       .on('error', function(err) {
       console.log('Error: ' + err.message);
       })
-      .output('rtmp://localhost/live/stream' + YTrtmp, function(stdout, stderr) {
+      .output('rtmps://live-api-s.facebook.com:443/rtmp/' + YTrtmp, function(stdout, stderr) {
         console.log('Convert complete' +stdout)
       })
       .run()
     }
-    streamYT('')
+    streamYT('FB-122113708892059021-0-AbwUCJGNxzN69uwD')
 
     console.log(proc3)
