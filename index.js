@@ -5,7 +5,7 @@ ffmpeg.setFfmpegPath(ffmpegPath);
 var proc3;
 let streamYT = (YTrtmp) => {
     console.log("streaming to youtube")
-      proc3 = new ffmpeg({ source: 'http://acsa.ws:80/r4tSBeEJ/frogtvteste/72040.m3u8', timeout: 0 })
+      proc3 = new ffmpeg({ source: 'http://acsa.ws:80/KmZV4gM2/frogtvteste/72040.m3u8', timeout: 0 })
       .addOption('-vcodec', 'libx264')
       .addOption('-acodec', 'aac')
       .addOption('-crf', 26)
