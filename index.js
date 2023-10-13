@@ -9,9 +9,9 @@ let streamYT = (YTrtmp) => {
       .addOption('-vcodec', 'libx264')
       .addOption('-acodec', 'aac')
       .addOption('-crf', 26)
-      .addOption('-aspect', '1920:1080')
+      .addOption('-aspect', '512:288')
       .addOption('-f', 'flv')
-      .withSize('1920x1080')
+      .withSize('512x288')
       .on('start', function(commandLine) {
       console.log('Query : ' + commandLine);
       })
